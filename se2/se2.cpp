@@ -1,3 +1,8 @@
+/*
+ *ä½œè€…ï¼šå”æŒ¯å›½
+ *æ—¶é—´ï¼š2021.11.20
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -6,7 +11,7 @@ using namespace std;
 
 int main()
 {
-	string s[3], str, flag = ""; // flagÎªÅĞ¶ÏÊ¡·İÊÇ·ñ¸üĞÂ; 
+	string s[3], str, flag = ""; // flagä¸ºåˆ¤æ–­çœä»½æ˜¯å¦æ›´æ–°; 
 	
 	int cnt = 0;  
 	while(getline(cin, str))
@@ -20,17 +25,17 @@ int main()
 		}
 		if(s[0] != flag)
 		{
-			if(cnt > 0) cout << endl << endl; //ÅĞ¶ÏÊÇ²»ÊÇµÚÒ»¸öÊä³öµÄÊ¡·İ£¬Èç¹û²»ÊÇÔòÊä³ö¿ÕĞĞ 
+			if(cnt > 0) cout << endl << endl; //åˆ¤æ–­æ˜¯ä¸æ˜¯ç¬¬ä¸€ä¸ªè¾“å‡ºçš„çœä»½ï¼Œå¦‚æœä¸æ˜¯åˆ™è¾“å‡ºç©ºè¡Œ 
 			cout << s[0];
-			flag = s[0]; // ¸üĞÂÊ¡·İ 
+			flag = s[0]; // æ›´æ–°çœä»½ 
 			cnt ++;
 		}
-		if(s[2]!= "0") // ÅĞ¶Ï´ËĞĞÊÇ·ñ´æÔÚ¡°´ıÃ÷È·µØÇø¡± 
+		if(s[2]!= "0") // åˆ¤æ–­æ­¤è¡Œæ˜¯å¦å­˜åœ¨â€œå¾…æ˜ç¡®åœ°åŒºâ€ 
 		{
 			cout << endl; 
 			cout << s[1] << '\t' << s[2];
 		} 
-		for (int i = 0; i < 3; i ++) s[i] = ""; // ³õÊ¼»¯×Ö·û´® 
+		for (int i = 0; i < 3; i ++) s[i] = ""; // åˆå§‹åŒ–å­—ç¬¦ä¸² 
 	}
 	
 	return 0;
