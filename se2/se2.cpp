@@ -17,7 +17,7 @@ int main()
 	while(getline(cin, str))
 	{
 		int k = 0;
-		str += "\t";
+		str += "\t"; //方便处理数据
 		for (int i = 0; i < str.size(); i ++)
 		{
 			if(str[i] == '\t') k ++;
